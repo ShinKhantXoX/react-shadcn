@@ -74,3 +74,55 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* navlist animation start */
+@keyframes aniDown {
+  from {
+    display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    display: block;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes aniUp {
+  0% {
+    height: 100%;
+    display: block;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    height: 10%;
+    display: none;
+    transform: translateY(-90%);
+    opacity: .4;
+  }
+  100% {
+    height: 0;
+    display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.ani-slide-down {
+  animation-name: aniDown;
+  animation-duration: .5s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+}
+
+.ani-slide-up {
+  animation-name: aniUp;
+  animation-duration: .5s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* navlist animation end */

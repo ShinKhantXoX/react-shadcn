@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./components/ui/ModeToggle"
 import { useEffect, useState } from "react";
-import { payments } from "./data/payment";
 import { DataTable } from "./components/ui/DataTable";
 import { columns } from "./data/columns";
 
